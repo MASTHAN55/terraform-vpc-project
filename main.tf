@@ -94,7 +94,6 @@ resource "aws_route_table_association" "private_association_Rt" {
 }
 
 ## create 2 security groups for instances
-# security group for Jenkins
 resource "aws_security_group" "jenkins_sg" {
   name        = "jenkins-sg"
   description = "Security group for Jenkins instance"
